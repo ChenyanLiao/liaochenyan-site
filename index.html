@@ -16,7 +16,7 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="assets/hero-software-lab.png">
     <link rel="preload" as="image" href="assets/hero-software-lab.png">
-    <link rel="stylesheet" href="styles.css?v=apple-ui-20260612b">
+    <link rel="stylesheet" href="styles.css?v=product-design-20260613">
   </head>
   <body data-lang="zh">
     <header class="site-header">
@@ -43,15 +43,33 @@
         <img class="hero-image" src="assets/hero-software-lab.png" alt="">
         <div class="hero-shade"></div>
         <div class="hero-content">
-          <p class="kicker" data-i18n="hero.kicker">个人软件工作台</p>
-          <h1 id="hero-title">Liao Chenyan</h1>
-          <p class="hero-copy" data-i18n="hero.copy">
-            正在把真实生活里的复杂习惯，做成更安静、可靠、有审美的工具。
-          </p>
-          <div class="hero-actions" data-i18n-aria-label="hero.actions">
-            <a class="primary-link" href="#grinddialing">GrindDialing</a>
-            <a class="secondary-link" href="#filmdevmonitor">FilmDevMonitor</a>
+          <div class="hero-copy-block">
+            <p class="kicker" data-i18n="hero.kicker">个人软件工作台</p>
+            <h1 id="hero-title">Liao Chenyan</h1>
+            <p class="hero-copy" data-i18n="hero.copy">
+              正在把真实生活里的复杂习惯，做成更安静、可靠、有审美的工具。
+            </p>
+            <div class="hero-actions" data-i18n-aria-label="hero.actions">
+              <a class="primary-link" href="#grinddialing">GrindDialing</a>
+              <a class="secondary-link" href="#filmdevmonitor">FilmDevMonitor</a>
+            </div>
           </div>
+
+          <aside class="hero-launch-panel" data-i18n-aria-label="hero.panel.aria">
+            <p class="hero-panel-label" data-i18n="hero.panel.label">发布准备中</p>
+            <div class="hero-panel-row">
+              <span>GrindDialing</span>
+              <strong data-i18n="hero.panel.grind">咖啡拨粉记录</strong>
+            </div>
+            <div class="hero-panel-row">
+              <span>FilmDevMonitor</span>
+              <strong data-i18n="hero.panel.film">暗房流程计时</strong>
+            </div>
+            <div class="hero-panel-footer">
+              <span data-i18n="status.soon">App Store 即将发布</span>
+              <span data-i18n="hero.panel.count">两款 App Store 项目</span>
+            </div>
+          </aside>
         </div>
       </section>
 
@@ -73,35 +91,73 @@
 
         <div class="app-grid">
           <article class="app-card" id="grinddialing">
-            <div class="app-meta">
-              <span class="status" data-i18n="status.soon">App Store 即将发布</span>
-              <span data-i18n="grind.category">咖啡 / 研磨拨粉</span>
+            <div class="app-card-content">
+              <div class="app-meta">
+                <span class="status" data-i18n="status.soon">App Store 即将发布</span>
+                <span data-i18n="grind.category">咖啡 / 研磨拨粉</span>
+              </div>
+              <h3>GrindDialing</h3>
+              <p data-i18n="grind.card.copy">
+                一款面向意式与精品咖啡的研磨拨粉助手，帮助你把咖啡豆、磨豆机、冲煮方法和每一次出品记录在同一个流程里。
+              </p>
+              <ul>
+                <li data-i18n="grind.card.point1">记录咖啡豆、磨豆机、冲煮方法与每一次出品。</li>
+                <li data-i18n="grind.card.point2">在真实磨豆机刻度上获得下一次调整方向。</li>
+                <li data-i18n="grind.card.point3">把感官反馈、萃取参数和复盘历史放在同一个地方。</li>
+              </ul>
             </div>
-            <h3>GrindDialing</h3>
-            <p data-i18n="grind.card.copy">
-              一款面向意式与精品咖啡的研磨拨粉助手，帮助你把咖啡豆、磨豆机、冲煮方法和每一次出品记录在同一个流程里。
-            </p>
-            <ul>
-              <li data-i18n="grind.card.point1">记录咖啡豆、磨豆机、冲煮方法与每一次出品。</li>
-              <li data-i18n="grind.card.point2">在真实磨豆机刻度上获得下一次调整方向。</li>
-              <li data-i18n="grind.card.point3">把感官反馈、萃取参数和复盘历史放在同一个地方。</li>
-            </ul>
+
+            <div class="app-visual grind-visual" aria-hidden="true">
+              <div class="visual-topline">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="grind-dial">
+                <span>18.0g</span>
+              </div>
+              <div class="visual-bars">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <p>27s / 1:2.1</p>
+            </div>
           </article>
 
           <article class="app-card accent" id="filmdevmonitor">
-            <div class="app-meta">
-              <span class="status" data-i18n="status.soon">App Store 即将发布</span>
-              <span data-i18n="film.category">胶片 / 显影流程</span>
+            <div class="app-card-content">
+              <div class="app-meta">
+                <span class="status" data-i18n="status.soon">App Store 即将发布</span>
+                <span data-i18n="film.category">胶片 / 显影流程</span>
+              </div>
+              <h3>FilmDevMonitor</h3>
+              <p data-i18n="film.card.copy">
+                一款安静的暗房计时器与显影记录本，用来保存可重复的配方，减少盯着时钟的不安。
+              </p>
+              <ul>
+                <li data-i18n="film.card.point1">为显影、停显、定影、水洗和干燥建立步骤计时。</li>
+                <li data-i18n="film.card.point2">记录温度、稀释比例、搅拌方式和批次信息。</li>
+                <li data-i18n="film.card.point3">让不同胶卷与实验结果更容易比较。</li>
+              </ul>
             </div>
-            <h3>FilmDevMonitor</h3>
-            <p data-i18n="film.card.copy">
-              一款安静的暗房计时器与显影记录本，用来保存可重复的配方，减少盯着时钟的不安。
-            </p>
-            <ul>
-              <li data-i18n="film.card.point1">为显影、停显、定影、水洗和干燥建立步骤计时。</li>
-              <li data-i18n="film.card.point2">记录温度、稀释比例、搅拌方式和批次信息。</li>
-              <li data-i18n="film.card.point3">让不同胶卷与实验结果更容易比较。</li>
-            </ul>
+
+            <div class="app-visual film-visual" aria-hidden="true">
+              <div class="visual-topline">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="film-timer">09:30</div>
+              <div class="film-timeline">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <p>DEV / STOP / FIX</p>
+            </div>
           </article>
         </div>
       </section>
@@ -238,6 +294,11 @@
           "hero.kicker": "个人软件工作台",
           "hero.copy": "正在把真实生活里的复杂习惯，做成更安静、可靠、有审美的工具。",
           "hero.actions": "精选应用",
+          "hero.panel.aria": "发布状态",
+          "hero.panel.label": "发布准备中",
+          "hero.panel.grind": "咖啡拨粉记录",
+          "hero.panel.film": "暗房流程计时",
+          "hero.panel.count": "两款 App Store 项目",
           "intro.aria": "当前状态",
           "intro.label": "正在准备",
           "intro.title": "两款 App Store 项目正在打磨。",
@@ -303,6 +364,11 @@
           "hero.kicker": "Personal software desk",
           "hero.copy": "Building quiet, reliable, well-shaped tools for the complicated rituals inside real life.",
           "hero.actions": "Featured apps",
+          "hero.panel.aria": "Launch status",
+          "hero.panel.label": "Preparing for launch",
+          "hero.panel.grind": "Coffee dial-in log",
+          "hero.panel.film": "Darkroom process timer",
+          "hero.panel.count": "Two App Store projects",
           "intro.aria": "Current status",
           "intro.label": "Now preparing",
           "intro.title": "Two App Store projects are warming up.",
