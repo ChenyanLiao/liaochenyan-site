@@ -1,81 +1,54 @@
 # Photography 照片维护说明
 
-本目录只存放会公开部署的摄影图片。私人原图、手机照片源和带有 EXIF/GPS 的文件不得放在这里。
+本目录只存放会公开部署的摄影发布副本。私人原图、手机源文件和带有 EXIF/GPS 的文件不得放在这里。
 
-## 添加照片
+## 当前状态
+
+- `gallery/` 现有 18 幅个人摄影作品，每幅包含大图与 `-thumb` 缩略图，共 36 个 WebP 文件。
+- 首页从 18 幅作品中选取 5 幅展示，移动端显示其中 3 幅；完整图库仍可浏览全部作品。
+- 所有标题、摘要、完整描述、地点粒度与替代文本均由 `content/photography.json` 管理。
+- 旧的生成式临时习作已移入 `work/archived-public-assets/20260712-photography-placeholders-retired/`，不再公开部署。
+
+## 添加或替换照片
 
 1. 只复制原图，不移动或覆盖原文件。
-2. 把待挑选的私人照片放到项目根目录的 `assets-private/photography-inbox/`；该目录已被 `.gitignore` 排除，永远不会部署。
-3. 在 `work/image-edits/` 中制作发布副本，先清除 EXIF、GPS、设备与创建时间信息。
-4. 把完成清理与压缩的发布副本放入本目录的 `gallery/`。
-5. 在 `content/photography.json` 中添加对应记录，完成中英文标题、地点与 alt 后再预览。
-
-## 文件命名
-
-使用小写英文、数字和连字符，例如：
-
-`2026-kunming-forest-canopy.webp`
-
-缩略图在文件名末尾添加 `-thumb`：
-
-`2026-kunming-forest-canopy-thumb.webp`
-
-不要在文件名中写入完整住址、姓名、设备序列号或其他私人信息。
+2. 把私人照片放入 `assets-private/photography-inbox/`；该目录由 `.gitignore` 排除，不会部署。
+3. 在忽略的 `assets-private/media-source-catalog.private.json` 中记录源文件与公开英文标识，不把私人文件名写入公开代码。
+4. 在 `content/photography.json` 中填写中英文标题、摘要、完整描述、公开地点粒度、替代文本和尺寸。
+5. 运行 `npm run prepare:media` 生成清除元数据的 WebP 大图与缩略图。
+6. 检查英文 `/`、中文 `/zh`、首页换一组、完整图库、键盘操作和移动端布局。
+7. 运行 `npm test`，确认构建与公开边界测试通过。
 
 ## photography.json 字段
 
 - `id`：稳定且唯一的英文标识。
-- `src`：大图路径，例如 `/media/photography/nature/example.webp`。
-- `thumbnail`：缩略图路径。
+- `src`：公开大图路径。
+- `thumbnail`：公开缩略图路径。
 - `title.en` / `title.zh`：中英文标题。
-- `year`：经过确认的拍摄年份；不确定时先留空，不要猜测。
+- `summary.en` / `summary.zh`：首页使用的一句简短描述。
+- `description.en` / `description.zh`：大图浏览器中的完整描述。
+- `year`：经过确认的拍摄年份；不确定时留空。
 - `location.en` / `location.zh`：只写适合公开的地点粒度。
-- `category`：`nature`、`field`、`research`、`places` 或 `everyday`。
-- `alt.en` / `alt.zh`：描述画面内容和必要语境，不写“图片”或文件名。
-- `featured`：是否优先展示。
+- `category`：作品类别。
+- `alt.en` / `alt.zh`：如实描述画面内容，不写文件名或私人信息。
+- `featured`：初始展示优先级。
 
-## 推荐尺寸与格式
+## 发布规格
 
-- 大图长边建议 1600–2400 px。
-- 缩略图长边建议 640–900 px。
-- 优先使用 WebP；需要进一步压缩且已完成浏览器核验时，可增加 AVIF。
-- 不放大低分辨率原图，不使用强 HDR、过度锐化或破坏性压缩。
-- 大图与缩略图必须是两个独立文件。
-
-## 生成 WebP
-
-可以使用本机 `cwebp` 从工作副本生成发布文件：
-
-`cwebp -q 82 input.jpg -o output.webp`
-
-发布前再次确认输出文件不含 EXIF/GPS。原始文件始终保留在私人源目录或原下载位置。
-
-## 预览
-
-1. 更新 `content/photography.json`。
-2. 在项目根目录运行现有开发预览。
-3. 检查英文 `/` 与中文 `/zh`。
-4. 检查缩略图、alt、点击大图、Escape 关闭、左右键和移动端触控。
-5. 运行 `npm run build`，确认没有图片 404。
+- 大图长边上限为 2600 px，缩略图宽度上限为 1200 px、竖图高度上限为 900 px。
+- 发布格式为 WebP；不放大低分辨率原图，不做破坏性锐化或过度 HDR。
+- `scripts/prepare-public-media.mjs` 会重新编码图像并检查 EXIF、XMP 与 IPTC 字段。
+- 原始照片始终保留在私人目录；网页只使用尺寸优化、元数据清理后的发布副本。
 
 ## 撤回照片
 
-1. 先从 `content/photography.json` 删除或注释对应记录并预览。
-2. 确认页面不再引用后，把公开图片移回 `work/image-edits/withdrawn/` 归档，不要删除原图。
-3. 重新构建并检查页面与社交预览中没有残留。
+1. 先从 `content/photography.json` 移除对应记录并预览。
+2. 确认页面不再引用后，把公开副本移入 `work/image-edits/withdrawn/` 归档，不直接删除。
+3. 重新构建，并检查页面、图片清单与社交预览没有残留引用。
 
-## 哪些目录会公开
-
-- `public/media/photography/` 中的图片会随网站部署。
-- `content/photography.json` 中的元数据会进入网站代码。
-
-## 哪些目录永远不应公开
+## 绝不公开
 
 - `assets-private/photography-inbox/`
-- `work/image-edits/` 中的源文件、拒绝版本和撤回版本
-- Downloads 中的原始照片
-- 任何仍含 EXIF、GPS、设备信息、私人住址或敏感研究内容的文件
-
-## 当前临时图片
-
-`gallery/` 中以 `study` 命名的图片是生成式临时视觉习作，页面会明确标注，并不会冒充 Liao 的个人实拍。挑选好真实照片后，以相同文件名替换发布副本并同步更新 `content/photography.json` 即可。
+- `assets-private/media-source-catalog.private.json`
+- `work/` 中的原图、拒绝版本、撤回版本与归档版本
+- 任何仍含 EXIF、GPS、设备信息、私人住址、电话号码或敏感研究内容的文件
