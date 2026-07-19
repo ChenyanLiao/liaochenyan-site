@@ -6,9 +6,9 @@
       "_x-BwTYOPIc.js"
     ]
   },
-  "_detail-pages-onQnUT8L.css": {
-    "file": "assets/detail-pages-onQnUT8L.css",
-    "src": "_detail-pages-onQnUT8L.css"
+  "_detail-pages-D9fQW_R0.css": {
+    "file": "assets/detail-pages-D9fQW_R0.css",
+    "src": "_detail-pages-D9fQW_R0.css"
   },
   "_framework-CXnKph_e.js": {
     "file": "assets/framework-CXnKph_e.js",
@@ -30,7 +30,7 @@
     ]
   },
   "app/components/AppDetailPage.tsx": {
-    "file": "assets/AppDetailPage-BCU6zwe3.js",
+    "file": "assets/AppDetailPage-DDKF9oAa.js",
     "name": "AppDetailPage",
     "src": "app/components/AppDetailPage.tsx",
     "isDynamicEntry": true,
@@ -42,7 +42,7 @@
       "_framework-CXnKph_e.js"
     ],
     "css": [
-      "assets/detail-pages-onQnUT8L.css"
+      "assets/detail-pages-D9fQW_R0.css"
     ]
   },
   "app/components/DetailHeader.tsx": {
@@ -57,7 +57,7 @@
     ]
   },
   "app/components/LanguagePreferenceRedirect.tsx": {
-    "file": "assets/LanguagePreferenceRedirect-C7atw1fJ.js",
+    "file": "assets/LanguagePreferenceRedirect-Blqzd1aR.js",
     "name": "LanguagePreferenceRedirect",
     "src": "app/components/LanguagePreferenceRedirect.tsx",
     "isDynamicEntry": true,
@@ -66,11 +66,11 @@
       "_framework-CXnKph_e.js"
     ],
     "css": [
-      "assets/detail-pages-onQnUT8L.css"
+      "assets/detail-pages-D9fQW_R0.css"
     ]
   },
   "app/components/PublicPortfolioPage.tsx": {
-    "file": "assets/PublicPortfolioPage-B1aTHETj.js",
+    "file": "assets/PublicPortfolioPage-CzFNasUz.js",
     "name": "PublicPortfolioPage",
     "src": "app/components/PublicPortfolioPage.tsx",
     "isDynamicEntry": true,
@@ -85,7 +85,7 @@
     ]
   },
   "node_modules/vinext/dist/shims/layout-segment-context.js": {
-    "file": "assets/layout-segment-context-Dv2ZGVHf.js",
+    "file": "assets/layout-segment-context-3kS7_Dj1.js",
     "name": "layout-segment-context",
     "src": "node_modules/vinext/dist/shims/layout-segment-context.js",
     "isDynamicEntry": true,
@@ -96,7 +96,7 @@
     ]
   },
   "virtual:vinext-app-browser-entry": {
-    "file": "assets/index-DGJ1dL39.js",
+    "file": "assets/index-CrsBl6OA.js",
     "name": "index",
     "src": "virtual:vinext-app-browser-entry",
     "isEntry": true,
