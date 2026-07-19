@@ -70,7 +70,7 @@
     ]
   },
   "app/components/PublicPortfolioPage.tsx": {
-    "file": "assets/PublicPortfolioPage-B3XOlnsw.js",
+    "file": "assets/PublicPortfolioPage-DCxqQCm3.js",
     "name": "PublicPortfolioPage",
     "src": "app/components/PublicPortfolioPage.tsx",
     "isDynamicEntry": true,
@@ -81,11 +81,11 @@
       "_framework-CXnKph_e.js"
     ],
     "css": [
-      "assets/PublicPortfolioPage-BElppurj.css"
+      "assets/PublicPortfolioPage-cSXwFdCF.css"
     ]
   },
   "node_modules/vinext/dist/shims/layout-segment-context.js": {
-    "file": "assets/layout-segment-context-D_qYlo0n.js",
+    "file": "assets/layout-segment-context-BOjONrru.js",
     "name": "layout-segment-context",
     "src": "node_modules/vinext/dist/shims/layout-segment-context.js",
     "isDynamicEntry": true,
@@ -96,7 +96,7 @@
     ]
   },
   "virtual:vinext-app-browser-entry": {
-    "file": "assets/index-mxwNk1Cr.js",
+    "file": "assets/index-wr_5ZQG2.js",
     "name": "index",
     "src": "virtual:vinext-app-browser-entry",
     "isEntry": true,
