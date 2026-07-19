@@ -1,4 +1,15 @@
 {
+  "_detail-pages-BI-Mcr2x.js": {
+    "file": "assets/detail-pages-BI-Mcr2x.js",
+    "name": "detail-pages",
+    "imports": [
+      "_x-BwTYOPIc.js"
+    ]
+  },
+  "_detail-pages-onQnUT8L.css": {
+    "file": "assets/detail-pages-onQnUT8L.css",
+    "src": "_detail-pages-onQnUT8L.css"
+  },
   "_framework-CXnKph_e.js": {
     "file": "assets/framework-CXnKph_e.js",
     "name": "framework",
@@ -10,21 +21,71 @@
     "file": "assets/rolldown-runtime-S-ySWqyJ.js",
     "name": "rolldown-runtime"
   },
-  "app/components/PublicPortfolioPage.tsx": {
-    "file": "assets/PublicPortfolioPage-QoiCQ_F9.js",
-    "name": "PublicPortfolioPage",
-    "src": "app/components/PublicPortfolioPage.tsx",
+  "_x-BwTYOPIc.js": {
+    "file": "assets/x-BwTYOPIc.js",
+    "name": "x",
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "_framework-CXnKph_e.js"
+    ]
+  },
+  "app/components/AppDetailPage.tsx": {
+    "file": "assets/AppDetailPage-BCU6zwe3.js",
+    "name": "AppDetailPage",
+    "src": "app/components/AppDetailPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "app/components/DetailHeader.tsx",
+      "_detail-pages-BI-Mcr2x.js",
+      "_x-BwTYOPIc.js",
+      "_framework-CXnKph_e.js"
+    ],
+    "css": [
+      "assets/detail-pages-onQnUT8L.css"
+    ]
+  },
+  "app/components/DetailHeader.tsx": {
+    "file": "assets/DetailHeader-Dtlc4DCu.js",
+    "name": "DetailHeader",
+    "src": "app/components/DetailHeader.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "_x-BwTYOPIc.js",
+      "_framework-CXnKph_e.js"
+    ]
+  },
+  "app/components/LanguagePreferenceRedirect.tsx": {
+    "file": "assets/LanguagePreferenceRedirect-C7atw1fJ.js",
+    "name": "LanguagePreferenceRedirect",
+    "src": "app/components/LanguagePreferenceRedirect.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_rolldown-runtime-S-ySWqyJ.js",
       "_framework-CXnKph_e.js"
     ],
     "css": [
-      "assets/PublicPortfolioPage-lr2hpNmY.css"
+      "assets/detail-pages-onQnUT8L.css"
+    ]
+  },
+  "app/components/PublicPortfolioPage.tsx": {
+    "file": "assets/PublicPortfolioPage-B3XOlnsw.js",
+    "name": "PublicPortfolioPage",
+    "src": "app/components/PublicPortfolioPage.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-S-ySWqyJ.js",
+      "_detail-pages-BI-Mcr2x.js",
+      "_x-BwTYOPIc.js",
+      "_framework-CXnKph_e.js"
+    ],
+    "css": [
+      "assets/PublicPortfolioPage-BElppurj.css"
     ]
   },
   "node_modules/vinext/dist/shims/layout-segment-context.js": {
-    "file": "assets/layout-segment-context-IwQGTvMh.js",
+    "file": "assets/layout-segment-context-D_qYlo0n.js",
     "name": "layout-segment-context",
     "src": "node_modules/vinext/dist/shims/layout-segment-context.js",
     "isDynamicEntry": true,
@@ -35,7 +96,7 @@
     ]
   },
   "virtual:vinext-app-browser-entry": {
-    "file": "assets/index-D0RL-MIf.js",
+    "file": "assets/index-mxwNk1Cr.js",
     "name": "index",
     "src": "virtual:vinext-app-browser-entry",
     "isEntry": true,
@@ -46,7 +107,10 @@
     "dynamicImports": [
       "app/components/PublicPortfolioPage.tsx",
       "node_modules/vinext/dist/shims/layout-segment-context.js",
-      "virtual:vinext-app-browser-entry"
+      "app/components/AppDetailPage.tsx",
+      "virtual:vinext-app-browser-entry",
+      "app/components/DetailHeader.tsx",
+      "app/components/LanguagePreferenceRedirect.tsx"
     ]
   }
 }
