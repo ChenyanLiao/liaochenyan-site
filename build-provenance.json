@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "0191954509320b6ad9678dae6e6f9510bed71733",
+  "sourceDirty": false,
+  "sourceStatusSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "sourceDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "sourceTreeSha256": "4815597f22f981cb54ef407f8e5a72eb8dd926c44075b720334fb07e0120529b",
+  "sourceFileCount": 173,
+  "generatedAt": "2026-08-13T08:05:25.088Z",
+  "nodeVersion": "v25.8.0",
+  "routes": [
+    "/",
+    "/zh/",
+    "/apps/grinddialing/",
+    "/apps/filmdevmonitor/",
+    "/research/charmm-gui-system-builder/",
+    "/en/apps/grinddialing/",
+    "/en/apps/filmdevmonitor/",
+    "/en/research/charmm-gui-system-builder/",
+    "/zh/apps/grinddialing/",
+    "/zh/apps/filmdevmonitor/",
+    "/zh/research/charmm-gui-system-builder/"
+  ]
+}
