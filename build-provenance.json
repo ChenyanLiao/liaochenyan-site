@@ -1,16 +1,19 @@
 {
   "schemaVersion": 1,
-  "sourceCommit": "73e07d1cce12a65de9839a8dc1bba65bafd081ad",
+  "sourceCommit": "040f0907b930465be4756f7765eb656d12db8d72",
   "sourceDirty": false,
   "sourceStatusSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "sourceDiffSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "sourceTreeSha256": "a4b85d647f4123df1cfc9d48db94896f8e5116340c382cab6e1b0bfca4979691",
-  "sourceFileCount": 174,
-  "generatedAt": "2026-08-30T11:38:34.308Z",
+  "sourceTreeSha256": "14efc6ec4a34014b6ea114dc0b0124fdd080b51398f88eb130f4999206748457",
+  "sourceFileCount": 256,
+  "generatedAt": "2026-09-01T08:02:06.978Z",
   "nodeVersion": "v26.7.0",
   "routes": [
     "/",
+    "/en/",
     "/zh/",
+    "/de/",
+    "/fr/",
     "/apps/grinddialing/",
     "/apps/filmdevmonitor/",
     "/research/charmm-gui-system-builder/",
@@ -19,6 +22,12 @@
     "/en/research/charmm-gui-system-builder/",
     "/zh/apps/grinddialing/",
     "/zh/apps/filmdevmonitor/",
-    "/zh/research/charmm-gui-system-builder/"
+    "/zh/research/charmm-gui-system-builder/",
+    "/de/apps/grinddialing/",
+    "/de/apps/filmdevmonitor/",
+    "/de/research/charmm-gui-system-builder/",
+    "/fr/apps/grinddialing/",
+    "/fr/apps/filmdevmonitor/",
+    "/fr/research/charmm-gui-system-builder/"
   ]
 }
