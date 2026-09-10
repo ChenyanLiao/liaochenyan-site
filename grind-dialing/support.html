@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YanMore Grind Support</title>
+  <meta name="description" content="Support information for YanMore Grind.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="index.html" aria-label="YanMore Grind home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>YanMore Grind</span>
+      </a>
+      <div class="nav-links">
+        <a href="support.html" aria-current="page">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <p class="eyebrow">Support</p>
+      <h1>YanMore Grind Support</h1>
+      <p class="lede">Help for coffee users recording brew results, interpreting grinder settings, and using grinder-aware next-step recommendations.</p>
+    </header>
+
+    <article class="content">
+      <section>
+        <h2>Common Questions</h2>
+
+        <h3>Does YanMore Grind require an account?</h3>
+        <p>No. The current app works locally for core recommendation, logging, sharing, and export flows.</p>
+
+        <h3>Does the app need location permission?</h3>
+        <p>No. The v1 app does not request location permission. Humidity, when needed for recommendation context, is entered manually.</p>
+
+        <h3>What should I do if a recommendation feels wrong?</h3>
+        <p>Check whether the brew record contains contradictory signals such as fast flow with bitterness, slow flow with sourness, channeling, uneven puck preparation, unusual water temperature, stale beans, or a grinder setting near the physical end stop. Save the next brew with tasting feedback so the model can learn from your actual grinder and method.</p>
+
+        <h3>How are stepped and stepless grinders handled?</h3>
+        <p>Stepped grinders receive executable click-based recommendations. Stepless grinders preserve continuous dial semantics. Dual-mode grinders can be recorded as either stepped or stepless so the recommendation, share output, and backup export keep the correct hardware semantics.</p>
+
+        <h3>How do espresso basket profiles work?</h3>
+        <p>Espresso basket profiles affect only espresso recommendations and records. They describe basket resistance, geometry, dose range, and whether the basket is pressurized; YanMore Grind does not maintain a brand/model basket database.</p>
+
+        <h3>Can I back up my data?</h3>
+        <p>Yes. Free includes basic local export. Pro adds complete backup export and restoration for supported app data. Sharing and export are user-initiated. Restoring an Apple purchase restores eligible Pro access, not coffee records; recovering records requires a data backup.</p>
+
+        <h3>Can I import shared recipes?</h3>
+        <p>Pro can import shared recipe payloads as reference recipes. Imported source names and notes are retained separately from local equipment identities. Importing does not make a recipe a measured brew or establish matching physical hardware. Confirm your equipment and target recipe, then record the actual result of your next brew.</p>
+
+        <h3>Who handles Pro payments and subscriptions?</h3>
+        <p>Apple App Store handles purchases and subscription billing. The app displays prices provided by StoreKit; if products cannot be loaded, retry when a connection is available rather than relying on a placeholder price. YanMore Grind does not charge your card or issue refunds itself.</p>
+
+        <h3>How do I restore a purchase or manage a subscription?</h3>
+        <p>Open the Pro page and choose Restore Purchases to ask Apple to refresh eligible purchases for your Apple Account. Manage Subscription opens Apple's subscription management interface. A pending purchase does not unlock Pro until Apple reports an eligible completed transaction. Restoring purchases does not restore coffee records; use a saved data backup for that.</p>
+
+        <h3>What happens when Pro access ends?</h3>
+        <p>Your saved coffee data is retained. Free limits apply again, and advanced data can remain available as read-only. Free and Pro use the same core recommendation logic for the same available inputs; Pro adds supported inputs and data tools, not a secretly more accurate base algorithm.</p>
+
+        <h3>Is a basket's nominal dose range mandatory?</h3>
+        <p>A manufacturer's nominal dose range is a reference, not a measurement of your puck fit. A modest departure alone does not prove channeling or preparation failure. Use the actual dose in your record and keep different basket and recipe contexts separate. Confirm observed preparation problems before relying on a grind adjustment.</p>
+      </section>
+
+      <section>
+        <h2>Troubleshooting</h2>
+        <ul>
+          <li>If recommendations are low-confidence, add a few recent brew records for the same grinder, bean, and brew method.</li>
+          <li>If taste feedback is contradictory, inspect puck prep, filter seating, water temperature, dose, yield, flow, and bean freshness.</li>
+          <li>For espresso, confirm the selected basket profile and dose range before relying on a strong grind change.</li>
+          <li>If a grinder CSV import fails, check that the file came from YanMore Grind or follows the expected structured grinder export format.</li>
+          <li>If humidity context is useful, enter it manually; recommendations do not depend on device location.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p class="callout">Support contact: <a href="mailto:Liao_Chenyan@yeah.net">Liao_Chenyan@yeah.net</a></p>
+        <p>Include these details when useful: app version and build number, device model, iOS or macOS version, brew method, grinder model, adjustment type, and whether the issue involves recommendation, import/export, sharing, layout, or accessibility.</p>
+      </section>
+    </article>
+
+    <footer class="footer">
+      <p>Copyright © 2026 Chenyan Liao. Last updated September 10, 2026.</p>
+    </footer>
+  </main>
+</body>
+</html>
