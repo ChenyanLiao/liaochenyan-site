@@ -29,18 +29,24 @@
     <article class="content">
       <section>
         <h2>Data Stored On Device</h2>
-        <p>YanMore Grind stores app data locally on your device to provide coffee grind recommendations, brew records, calibration history, bean and grinder profiles, an optional coffee diary and sleep feedback, app settings, and local backup/export features.</p>
+        <p>YanMore Grind stores app data locally on your device to provide coffee grind recommendations, brew records, calibration history, bean and grinder profiles, an optional coffee diary and sleep feedback, app settings, and local backup/export features. Version 2.1 also stores milk inventory and reminder settings locally.</p>
         <p>Local app data may include:</p>
         <ul>
           <li>Coffee bean names and roasting details you enter.</li>
           <li>Grinder and espresso machine profiles you save.</li>
           <li>Brew records, optional espresso basket profile details, tasting notes, flavor tags, ratings, and calibration history.</li>
-          <li>Drinks you explicitly add to the diary: time and time zone, beverage and source, ingredient estimates or manually entered caffeine amounts, optional milk type and amount, store name, and notes.</li>
+          <li>Diary entries you add explicitly and, starting in version 2.1, estimated intake entries created when you save a new brew: time and time zone, beverage and source, ingredient estimates or manually entered caffeine amounts, optional milk type and amount, store name, and notes. You can undo or delete personal intake without deleting its brew record. Calculating a historical brew alone does not add intake.</li>
+          <li>In version 2.1, milk product and batch details, carton and bottle quantities, production and expiry dates, opening times, remaining volumes, use and loss history, stock corrections, notes, and reminder preferences.</li>
           <li>Optional sleep feedback: attempted sleep, approximate sleep onset and wake time, quality, recovery, and notes. You can turn off the diary's sleep association and delete saved sleep feedback.</li>
           <li>Photos you choose to attach to a brewing journal record or coffee diary entry.</li>
           <li>App settings such as language and appearance.</li>
         </ul>
-        <p>Ingredient amounts are estimates unless you enter an external value. They are not laboratory measurements or medical diagnoses. Version 2.0 does not read from or write to Apple Health.</p>
+        <p>Ingredient amounts are estimates unless you enter an external value. They are not laboratory measurements or medical diagnoses. Versions 2.0 and 2.1 do not read from or write to Apple Health.</p>
+      </section>
+
+      <section>
+        <h2>Local Milk Reminders In Version 2.1</h2>
+        <p>If you enable milk reminders, the app requests permission for notification alerts and sounds and schedules reminders locally through the operating system. Reminder content may include milk names and deadline information. These reminders do not require a YanMore server and are not food-safety certification. You can manage notification permission in system settings and reminder preferences in the app.</p>
       </section>
 
       <section>
@@ -51,7 +57,7 @@
 
       <section>
         <h2>Sharing And Export</h2>
-        <p>Sharing and export actions happen only when you choose them. A full backup may include brewing, diary, sleep, notes, and photo data. Review the destination before sharing a backup. The app does not automatically upload these records to a YanMore server.</p>
+        <p>Sharing and export actions happen only when you choose them. A full backup may include brewing, diary, sleep, notes, and photo data, as well as milk inventory and history in version 2.1. Review the destination before sharing a backup. The app does not automatically upload these records to a YanMore server.</p>
         <p>YanMore Grind does not mutate the recommendation model merely because you share or export a record.</p>
       </section>
 
@@ -62,7 +68,7 @@
 
       <section>
         <h2>Accounts And Servers</h2>
-        <p>The current app does not require an account and does not depend on a YanMore server for core recommendations, diary, sleep feedback, sharing, or export.</p>
+        <p>The current app does not require an account and does not depend on a YanMore server for core recommendations, diary, sleep feedback, milk inventory, local reminders, sharing, or export.</p>
       </section>
 
       <section>
@@ -83,7 +89,7 @@
     </article>
 
     <footer class="footer">
-      <p>Copyright © 2026 Chenyan Liao. Last updated September 24, 2026.</p>
+      <p>Copyright © 2026 Chenyan Liao. Last updated October 9, 2026.</p>
     </footer>
   </main>
 </body>
