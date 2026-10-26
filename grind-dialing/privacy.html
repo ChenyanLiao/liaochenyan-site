@@ -4,9 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>YanMore Grind Privacy Policy</title>
+  <link rel="canonical" href="https://liaochenyan.com/grind-dialing/privacy.html">
   <meta name="description" content="Privacy policy for YanMore Grind.">
   <link rel="stylesheet" href="styles.css">
-</head>
+<meta name="robots" content="noindex, follow"/></head>
 <body>
   <main class="shell">
     <nav class="nav" aria-label="Main">
@@ -23,13 +24,13 @@
     <header class="hero">
       <p class="eyebrow">Privacy Policy</p>
       <h1>Privacy Policy</h1>
-      <p class="lede">YanMore Grind is a local-first coffee brewing journal, grinder recommendation tool, and optional coffee diary. The app does not require an account, does not use tracking, and does not declare tracking domains.</p>
+      <p class="lede">YanMore Grind is a local-first coffee brewing journal, grind recommendation tool, and optional coffee diary. You do not need a separate YanMore account. Version 3.0 adds optional iCloud sync, which uses your Apple account only when you choose to enable it.</p>
     </header>
 
     <article class="content">
       <section>
         <h2>Data Stored On Device</h2>
-        <p>YanMore Grind stores app data locally on your device to provide coffee grind recommendations, brew records, calibration history, bean and grinder profiles, an optional coffee diary and sleep feedback, app settings, and local backup/export features. Version 2.1 also stores milk inventory and reminder settings locally.</p>
+        <p>YanMore Grind stores app data locally to provide grind recommendations, brewing and tasting records, bean and equipment profiles, recipes, coffee diary and sleep feedback, milk inventory, reminders, and backup/export features. Features described for version 3.0 apply when you use a version that includes them; earlier versions retain their available local features.</p>
         <p>Local app data may include:</p>
         <ul>
           <li>Coffee bean names and roasting details you enter.</li>
@@ -39,36 +40,53 @@
           <li>In version 2.1, milk product and batch details, carton and bottle quantities, production and expiry dates, opening times, remaining volumes, use and loss history, stock corrections, notes, and reminder preferences.</li>
           <li>Optional sleep feedback: attempted sleep, approximate sleep onset and wake time, quality, recovery, and notes. You can turn off the diary's sleep association and delete saved sleep feedback.</li>
           <li>Photos you choose to attach to a brewing journal record or coffee diary entry.</li>
+          <li>Bean-bag identities, repurchase details, portions, storage and freezing history, and inventory adjustments.</li>
+          <li>Named recipes, brewing plans, preparation steps, recipe notes, source links, attached reference photos, saved versions, and comparisons.</li>
           <li>App settings such as language and appearance.</li>
         </ul>
-        <p>Ingredient amounts are estimates unless you enter an external value. They are not laboratory measurements or medical diagnoses. Versions 2.0 and 2.1 do not read from or write to Apple Health.</p>
+        <p>Ingredient amounts are estimates unless you enter an external value. They are not laboratory measurements or medical diagnoses. The app does not read from or write to Apple Health.</p>
+        <p>Camera access is requested only when you choose to take a still photo for a record. The app does not continuously capture images or record your voice.</p>
       </section>
 
       <section>
-        <h2>Local Milk Reminders In Version 2.1</h2>
+        <h2>Optional iCloud Sync In Version 3.0</h2>
+        <p>Core features continue to work locally. Sync is off by default. You must sign into iCloud in your device's system settings, review the app's initial merge preview, and confirm before sync is enabled. Basic sync is available to Free and Pro users; professional features keep their existing access requirements.</p>
+        <p>When enabled, synchronized data is stored in the private CloudKit database of your Apple account. It can include bean bags and storage, equipment and calibration settings, brewing and tasting records, drink and sleep entries, diary confirmations, recipes and notes, milk inventory, and attached photos. Learned model offsets stay local and are rebuilt from eligible records rather than added together across devices. YanMore does not operate a server that receives these records, and your private records are not available to other app users or to us through the CloudKit developer dashboard.</p>
+        <p>Pro purchase entitlements, device appearance and language preferences, and unfinished brewing sessions are not synchronized through this CloudKit data flow. A paired Apple Watch uses the separate preparation-session connection described below.</p>
+        <p>Concurrent changes may require you to choose which version to keep. Some related inventory and bag records are merged as a group. Deleting a synchronized record can propagate that deletion to your other devices. Turning sync off keeps your local data and does not delete existing cloud copies. Changing the Apple account pauses the previous account's sync; a different account requires a new review and confirmation.</p>
+        <p>Changes and photos may remain pending when offline, when iCloud storage is full, or while Apple services are unavailable. Sync uses your iCloud storage and its delivery timing depends on Apple and the network. You can manage app data in Apple's iCloud storage controls. Keep a separate export or backup: sync carries changes and deletions and is not an independent backup.</p>
+      </section>
+
+      <section>
+        <h2>Reminders, Lock Screen, And Apple Watch</h2>
         <p>If you enable milk reminders, the app requests permission for notification alerts and sounds and schedules reminders locally through the operating system. Reminder content may include milk names and deadline information. These reminders do not require a YanMore server and are not food-safety certification. You can manage notification permission in system settings and reminder preferences in the app.</p>
+        <p>When you use brewing timers, Live Activities can show the bean name, stage, elapsed time, and recipe targets on the Lock Screen or Dynamic Island where supported. Consider this visibility when naming your records and manage Live Activities in system settings.</p>
+        <p>If you use the companion Apple Watch app, the paired iPhone and Watch exchange the current brewing session, recipe targets and stages, timer commands and confirmations, language, and feature-access status through Apple's WatchConnectivity. The Watch can retain pending timer commands until the connection resumes. This feature does not send your full coffee journal to a YanMore server.</p>
+        <p>Optional Chinese spoken prompts use prerecorded audio bundled with the app. Dynamic quantities and your notes use the device's system speech service. The app does not send your recipes, notes, or voice to Kimi or another voice-generation service.</p>
       </section>
 
       <section>
         <h2>Location</h2>
         <p>The current app does not request location permission and does not collect precise location.</p>
         <p>Humidity, when needed for recommendation context, is entered manually by the user. Core recommendation, logging, sharing, and export features do not depend on device location.</p>
+        <p>The bean-origin map uses the origin information saved with your beans and bundled geographic data. It is not a map of your device's location; the app does not send personal bean names or photos to an external geocoding service.</p>
       </section>
 
       <section>
         <h2>Sharing And Export</h2>
-        <p>Sharing and export actions happen only when you choose them. A full backup may include brewing, diary, sleep, notes, and photo data, as well as milk inventory and history in version 2.1. Review the destination before sharing a backup. The app does not automatically upload these records to a YanMore server.</p>
+        <p>Sharing and export actions happen only when you choose them. A full backup may include coffee bags, equipment, brewing, diary, sleep, recipe notes, photos, milk inventory, and storage history. Review the destination before sharing a backup. The app does not automatically upload these records to a YanMore server.</p>
         <p>YanMore Grind does not mutate the recommendation model merely because you share or export a record.</p>
+        <p>Recipe source links are saved as part of your notes. When you choose to open a link, the destination website or app handles the visit under its own privacy policy. Copying a link places it on the system clipboard. Saving a recipe note does not automatically fetch the linked page.</p>
       </section>
 
       <section>
         <h2>Tracking And Advertising</h2>
-        <p>YanMore Grind does not track you across apps or websites and does not use third-party advertising identifiers.</p>
+        <p>YanMore Grind does not track you across apps or websites, does not use third-party advertising identifiers, and does not include an advertising or third-party analytics SDK. Apple may process service, purchase, or diagnostic information under its own policies and your system settings.</p>
       </section>
 
       <section>
         <h2>Accounts And Servers</h2>
-        <p>The current app does not require an account and does not depend on a YanMore server for core recommendations, diary, sleep feedback, milk inventory, local reminders, sharing, or export.</p>
+        <p>The app does not require a separate YanMore account and does not depend on a YanMore server for core recommendations, diary, sleep feedback, milk inventory, local reminders, sharing, or export. Optional iCloud sync requires your Apple account; App Store purchases are handled by Apple.</p>
       </section>
 
       <section>
@@ -78,18 +96,20 @@
       </section>
 
       <section>
-        <h2>Future Changes</h2>
-        <p>If a future version adds cloud sync, accounts, analytics, crash reporting, server import, or other network services, this privacy policy and the App Store privacy disclosures should be updated before release.</p>
+        <h2>Your Choices And Policy Changes</h2>
+        <p>You can edit or delete supported records in the app, turn off optional sync, and manage system permissions. Deleting the app or turning off sync is not a request to delete copies you previously exported or stored in iCloud. We do not have access to your private CloudKit records to delete them on your behalf.</p>
+        <p>We will update this policy when the app's data practices change. Changes to developer-accessible data collection will also be reflected in the App Store privacy disclosures.</p>
       </section>
 
       <section>
         <h2>Contact</h2>
         <p class="callout">Support contact: <a href="mailto:Liao_Chenyan@yeah.net">Liao_Chenyan@yeah.net</a></p>
+        <p>If you contact support, we receive the message and any files you choose to send so we can respond. Please avoid sending passwords, verification codes, or a full personal backup unless it is necessary for the issue. You may ask us about deletion of support correspondence; we cannot directly edit data held only on your devices or in your private iCloud database.</p>
       </section>
     </article>
 
     <footer class="footer">
-      <p>Copyright © 2026 Chenyan Liao. Last updated October 9, 2026.</p>
+      <p>Copyright © 2026 Chenyan Liao. Last updated October 25, 2026.</p>
     </footer>
   </main>
 </body>
